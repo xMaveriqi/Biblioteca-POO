@@ -74,11 +74,15 @@ public class Biblioteca {
     
     // Método para listar todos os usuários cadastrados
     public void listarUsuarios(){
+        // Verifica se não há usuários cadastrados
+        if (usuarios.isEmpty()) {
+            System.out.println("nenhum usuario cadastrado");
+            return;
+        }
         // Percorre a lista de usuários
-        for (Usuario U : usuarios){
+       for (Usuario U : usuarios){
             // Chama o método info() do usuário
             U.info();
-            // linha para separar
             System.out.println("-----");
         }
     }

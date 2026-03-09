@@ -33,7 +33,8 @@ public class Main {
                     break;
                     
                 case 4:
-                    biblioteca.listarUsuarios();
+                if()    
+                biblioteca.listarUsuarios();
                     break;
                 case 5:
                     System.out.println("digite o titulo do livro");
