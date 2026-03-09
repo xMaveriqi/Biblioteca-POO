@@ -62,7 +62,7 @@ public class Main {
                     
                 default: // Opção inválida
                     System.out.println("Opção Inválida"); // Informa erro
-                    System.exit(0); // Encerra (talvez deveria voltar ao menu, mas está assim)
+                    System.exit(0); // Encerra
                     break;
             }
         
