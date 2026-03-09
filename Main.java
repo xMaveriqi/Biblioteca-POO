@@ -8,6 +8,7 @@ public class Main {
             System.out.println("==========Bem Vindo A Biblioteca==========");
             System.out.println("=         Escolha Uma Opção         =\n 1 - Cadastrar Livros\n 2 - Cadastrar Usuários\n 3 - Listar livros\n 4 - Listar Usuários\n 5 - Emprestar livros\n 6 - Devolver livros\n 0 - Sair");
             System.out.println("==========================================");
+            System.out.println("Digite uma opção: ");
             int opcao = sc.nextInt();
             switch(opcao){
                 case 1: 
