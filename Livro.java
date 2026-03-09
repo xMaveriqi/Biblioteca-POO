@@ -1,7 +1,7 @@
 
 // Classe que representa um livro na biblioteca
 public class Livro{
-    // Atributos da classe Livro: autor, título e status de empréstimo
+    // Atributos da classe Livro: autor, título e se foi emprestado
     String autor;
     String titulo;
     boolean emprestado;
@@ -10,7 +10,7 @@ public class Livro{
     public Livro(String titulo, String autor){
         this.titulo = titulo;
         this.autor = autor;
-        this.emprestado = false; // Por padrão, o livro não está emprestado
+        this.emprestado = false; //o livro não está emprestado
     }
     
     // Método para emprestar o livro, marca como emprestado

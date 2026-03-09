@@ -1,14 +1,11 @@
-// Importa a classe ArrayList para usar listas dinâmicas
 import java.util.ArrayList;
 
-// Classe que representa a biblioteca, gerenciando livros e usuários
 public class Biblioteca {
     // Listas para armazenar os livros e usuários cadastrados
     ArrayList<Livro> livros = new ArrayList<>();
     ArrayList<Usuario> usuarios = new ArrayList<>();
     
-    // Método para cadastrar um novo livro na biblioteca
-    public void cadastrarLivro(String titulo, String autor){
+    public void cadastrarLivro(String titulo, String autor){ //metodo para cadastrar livro
         // Cria um novo objeto Livro com os dados fornecidos
         Livro novoLivro = new Livro(titulo,autor);
         // Adiciona o livro à lista de livros
@@ -18,18 +15,17 @@ public class Biblioteca {
     // Método para listar todos os livros cadastrados
     public void listarLivros(){
         // Percorre a lista de livros
-        for (Livro l : livros){
+        for (Livro l : livros){ //laço for-each
             // Chama o método info() do livro para exibir suas informações
             l.info();
-            // Imprime uma linha separadora
-            System.out.println("--------");
+            System.out.println("--------"); //linha para separar
         }
     }
     
     // Método para emprestar um livro pelo título
     public void emprestarLivro(String titulo){
         // Percorre a lista de livros
-        for (Livro l : livros){
+        for (Livro l : livros){ //laço for-each
             // Verifica se o título do livro atual corresponde ao procurado
             if(l.titulo.equals(titulo)){
                 // Se o livro não estiver emprestado, empresta
@@ -82,7 +78,7 @@ public class Biblioteca {
         for (Usuario U : usuarios){
             // Chama o método info() do usuário
             U.info();
-            // Imprime separador
+            // linha para separar
             System.out.println("-----");
         }
     }
