@@ -5,7 +5,7 @@ public class Livro{
     String autor;
     String titulo;
     boolean emprestado;
-    
+    String status = emprestado ? "Emprestado" : "Disponível";
     // Construtor da classe Livro, inicializa os atributos com os valores passados
     public Livro(String titulo, String autor){
         this.titulo = titulo;
